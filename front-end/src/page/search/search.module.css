@@ -1,0 +1,75 @@
+.wrapper{
+    margin: 64px 0 !important;
+}
+.search_dashboard{
+    background-color: #febb02;
+    padding: 40px 30px !important;
+    color: rgba(0, 0, 0, 0.99);
+    border-radius: 5px;
+}
+.item_option{
+    margin-bottom: 8px;
+    align-self: center;
+}
+.card_list_item{
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.image_bg {
+    height: 100% !important;
+    background-position: center center;
+    background-size: cover;
+}
+
+.title {
+    color: #0071c2;
+}
+
+.tag {
+    background-color: #008009;
+    color: white;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.type {
+    margin: 20px 0 10px 0 !important;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    text-align: right;
+    transform: translateY(-50%);
+}
+
+.free_cancel {
+    color: #27903d;
+    font-weight: bold;
+}
+
+.free_cancel2 {
+    opacity: 0.5;
+    text-align: right;
+}
+
+.see_detail,
+.see_detail {
+    margin-top: 10px;
+    margin-left: auto;
+    display: flex !important;
+}
+
+.see-detail-text {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #1b8b2a;
+}
+.rate {
+    background-color: #febb02;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}

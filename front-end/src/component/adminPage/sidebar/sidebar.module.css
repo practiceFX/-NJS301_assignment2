@@ -1,0 +1,26 @@
+.title{
+    color: purple;
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.151) !important;
+}
+.icon{
+    color: purple;
+    margin-left: 16px;
+}
+.list_name{
+    padding: 16px 0;
+    margin-top: 16px;
+}
+.item_list_name{
+    list-style: none;
+    padding-left: 8px !important;
+    margin: 8px 0;
+}
+
+
+.wrapper{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 0 16px !important;
+    height: 100vh;
+}

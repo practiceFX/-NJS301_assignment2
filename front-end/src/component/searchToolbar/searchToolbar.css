@@ -1,0 +1,43 @@
+.search-area {
+    background-color: white;
+    margin: 0;
+    transform: translateY(100%);
+    border-radius: 10px;
+    border: 5px solid #febb02;
+    z-index: 10;
+}
+.search-area .item-input {
+    border-color: transparent !important;
+    padding-inline: 30px;
+ 
+}
+.search-area .item-input--date {
+    position: absolute;
+    transform: translateX(-25%);
+   
+}
+.search-area .hide-datePicker {
+    display: none;
+}
+.search-area .item-input:focus {
+    box-shadow: none !important;
+}
+.search-area .icon-input {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+.item-input--count{
+    margin-top: 8px;
+}
+
+.item-search-people{
+    display: flex;
+    padding-inline: 50px;
+}
+.item-search-people .text{
+    line-height: 3.5;
+    margin-right: 20px;
+    width: 100px;
+}

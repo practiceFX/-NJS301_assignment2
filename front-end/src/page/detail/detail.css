@@ -1,0 +1,50 @@
+.section-page--detail {
+	margin: 64px 0;
+}
+ .section-page--detail .button-reserved {
+	 text-align: right;
+	 margin-top: 10px;
+}
+ .section-page--detail .button-reserved button {
+	
+}
+ .section-page--detail .distance {
+	 color: #0275c6;
+}
+ .section-page--detail .description {
+	 color: #078220;
+}
+ .section-page--detail .card-description {
+	 margin-top: 50px;
+}
+ .section-page--detail .card-description .left {
+	 padding: 0;
+}
+ .section-page--detail .card-description .left .title {
+	 margin-bottom: 30px;
+}
+ .section-page--detail .card-description .right .inner-content {
+	 padding: 20px;
+	 background-color: #ebf3ff;
+}
+ .section-page--detail .card-description .right .inner-content .text {
+	 margin-top: 30px;
+}
+ .section-page--detail .card-description .right .inner-content .price {
+	 margin-bottom: 30px;
+}
+.item-input--date{
+	width: fit-content !important;
+}
+.wrapper_select_room{
+	align-self: center;
+}
+.select_room{
+	list-style: none;
+	
+}
+.select_room li{
+	float: left;
+	text-align: center;
+	margin-inline: 3px;
+}

@@ -1,0 +1,22 @@
+.wrapper{
+    margin: 30px 0;
+}
+.img_frame{
+    height: 150px;
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.item_type{
+    margin:auto;
+}
+
+
+.title{
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  
+    -webkit-box-orient: vertical;
+    height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

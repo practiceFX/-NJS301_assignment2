@@ -1,0 +1,17 @@
+.wrapper_slider{
+    height: 280px;
+}
+.image_banner{
+    width:100%;
+    padding: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.6);
+}
+.text_banner{
+    text-align: center;
+    position: relative;
+    top: -200px;
+    color: white;
+}

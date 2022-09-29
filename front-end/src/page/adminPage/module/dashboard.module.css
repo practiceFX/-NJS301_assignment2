@@ -1,0 +1,24 @@
+.content{
+    padding: 64px;
+    height:100vh;
+    overflow-y: scroll;
+}
+.card_item{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.title{
+    color: rgba(0, 0, 0, 0.372);
+}
+.icon{
+    align-self: flex-end;
+    color: purple;
+}
+.table_content{
+    margin: 64px 16px;
+}
+.title_table{
+    color: rgba(0, 0, 0, 0.372);
+}
+.wrapper_button{
+    text-align: right;
+}

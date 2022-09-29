@@ -1,0 +1,44 @@
+.wrapper_navbar{
+    background-color: #003580;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+/* section header */
+
+.logo{
+    max-width: 80px;
+    height: 80px;
+    color: white;
+}
+.section_header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.action_header{
+    direction: rtl;
+    align-items: center;
+    align-self: center;
+}
+.button_action{
+    margin-inline: 5px;
+    width: 100px;
+    border-radius: 3px !important;
+   
+}
+/* end */
+
+/* section navbar */
+.inner_navbar{
+    margin:auto;
+    display: flex;
+}
+.navbar_item{
+    margin:auto;
+    text-align: center;
+    
+}
+.text_link, .icon_item{
+    color: white !important;
+}
+/* :end */

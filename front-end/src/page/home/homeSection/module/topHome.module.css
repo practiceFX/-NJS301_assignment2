@@ -1,0 +1,20 @@
+.img_frame{
+    height: 250px;
+    border-radius: 10px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.rate{
+    background-color: #0069fc;
+    color: white;
+    padding-inline: 3px;
+}
+
+.title{
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;  
+    -webkit-box-orient: vertical;
+    height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

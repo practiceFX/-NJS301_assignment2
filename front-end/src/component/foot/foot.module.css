@@ -1,0 +1,26 @@
+.section_foot{
+    margin: 32px auto;
+}
+.inner_section_topfoot{
+    background-color: #003580;
+    padding: 40px 160px !important;
+    text-align: center;
+    color: white !important;
+}
+
+.inner_subcribe{
+    width: 50%;
+    margin: 32px auto !important;
+}
+
+.button_subscribe{
+    width: 20% !important;
+    margin: 32px auto 0 auto !important;
+}
+
+.inner_section_bottomfoot{
+    margin-top: 32px;
+}
+.item_foot{
+    margin: 32px auto 0 auto;
+}

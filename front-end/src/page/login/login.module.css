@@ -1,0 +1,7 @@
+.wrapper{
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    margin: auto
+}
