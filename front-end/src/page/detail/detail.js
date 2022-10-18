@@ -44,6 +44,8 @@ const Detail = () => {
 
     const { data } = useQuery('detail-hotel', () => fetchHotelDetail(idHotel));
     const dataDetail = useQuery('detail-booking', () => fetchEmptyRoom(idHotel, startDate, endDate));
+    console.log(dataDetail?.data)
+    // const [dataRoomBooked, setdataRoomBooked] = React.useState([])
     // console.log(dataDetail)
 
 
@@ -55,7 +57,7 @@ const Detail = () => {
     }
 
 
-    // get id-hotel query 
+    // get id-hotel query
     const search = useLocation().search;
     const idHotel = new URLSearchParams(search).get('id');
     const minPrice = new URLSearchParams(search).get('price');
@@ -63,8 +65,14 @@ const Detail = () => {
 
 
     const photoArray = (photoString) => {
-        const array = photoString.split(',');
-        return array;
+        if (photoString > 1) {
+            return photoString.split(',');
+        }
+        else {
+            return photoString;
+        }
+
+        // return array;
     }
 
 
@@ -236,16 +244,31 @@ const Detail = () => {
                                                                     </CardTitle>
                                                                 </Col>
                                                                 <Col xs={4} className="wrapper_select_room">
+
+                                                                    {
+
+                                                                    }
                                                                     <ul className="select_room">
                                                                         {
                                                                             item.roomNumbers.map((number, index) => {
-                                                                                return (
-                                                                                    <li key={index}>
-                                                                                        <label>{number}</label><br />
-                                                                                        <input type="checkbox" name="fav_language" onChange={(e) => { getPrice(e, item.price, amountOfDay, number) }} />
-                                                                                    </li>
-                                                                                )
+
+                                                                                if (dataDetail?.data?.arrayRoomBook[0]?.room.includes(number)) {
+                                                                                    return (
+                                                                                        <li key={index} style={{ opacity: '0.6' }}>
+                                                                                            <label>{number}</label><br />
+                                                                                            <input type="checkbox" name="fav_language" onChange={(e) => { getPrice(e, item.price, amountOfDay, number) }} disabled />
+                                                                                        </li>
+                                                                                    )
+                                                                                } else {
+                                                                                    return (
+                                                                                        <li key={index}>
+                                                                                            <label>{number}</label><br />
+                                                                                            <input type="checkbox" name="fav_language" onChange={(e) => { getPrice(e, item.price, amountOfDay, number) }} />
+                                                                                        </li>
+                                                                                    )
+                                                                                }
                                                                             })
+
                                                                         }
                                                                     </ul>
                                                                 </Col>

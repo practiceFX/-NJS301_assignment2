@@ -17,12 +17,24 @@ exports.searchController = async (req, res, next) => {
             { dateStart: { $lte: dateEnd }, dateEnd: { $gte: dateEnd } }
         ],
     });
-    let rooms = handleObjectRoom(roomBooked);
-    let roomType = await roomModel.find({ 'maxPeople': maxPeople, 'roomNumbers': { $elemMatch: { $nin: rooms } } });
-    let roomTitle = handleObjectTitle(roomType);
-    hotelModel.find({
-        'city': city, 'rooms': { $elemMatch: { $in: roomTitle } }
-    }).then(respon => {
-        res.send(respon);
-    })
+
+
+    if (roomBooked.length > 0) {
+        let rooms = handleObjectRoom(roomBooked);
+        let roomType = await roomModel.find({ 'maxPeople': maxPeople, 'roomNumbers': { $elemMatch: { $nin: rooms } } });
+        let roomTitle = handleObjectTitle(roomType);
+        hotelModel.find({
+            'city': city, 'rooms': { $elemMatch: { $in: roomTitle } }
+        }).then(respon => {
+            res.send(respon);
+        })
+    } else {
+        hotelModel.find({
+            'city': city
+        }).then(respon => {
+            res.send(respon);
+        })
+    }
+
+
 }

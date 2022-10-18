@@ -12,7 +12,6 @@ exports.cityController = (req, res, next) => {
         city: { $in: cityName }
     }).then(respon => {
         let city = respon;
-
         let dataTopCity = [];
 
         //filter name of city by name key

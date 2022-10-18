@@ -13,6 +13,8 @@ exports.authController = async (req, res, next) => {
         isUser = 'false';
     }
 }
+
+
 exports.isAuthController = (req, res, next) => {
     res.send(isUser);
 }

@@ -87,7 +87,6 @@ exports.deleteRoomController = (req, res, next) => {
     })
 }
 
-
 exports.roomEmptyController = async (req, res, next) => {
     let idHotel = req.query.id;
     let dateStart = new Date(req.query.dateStart);
@@ -109,6 +108,7 @@ exports.roomEmptyController = async (req, res, next) => {
     let roomAll = await roomModel.find({
         title: { $in: typeRoomHotel[0]?.rooms }
     })
+    console.log(roomBooked)
 
     res.send({
         allRoom: roomAll,
